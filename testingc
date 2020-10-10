@@ -29,6 +29,6 @@ def getImagesAndLabels(path):
             Ids.append(Id)
     return faceSamples,Ids
 
-#faces,Ids = getImagesAndLabels('TrainingImage')
-#recognizer.train(faces, np.array(Ids))
-#recognizer.save('TrainingImageLabel/trainner.yml')
+faces,Ids = getImagesAndLabels('TrainingImage')
+recognizer.train(faces, np.array(Ids))
+recognizer.save('TrainingImageLabel/trainner.yml')
